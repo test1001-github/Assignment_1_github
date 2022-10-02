@@ -33,3 +33,15 @@
 ![git_config_user_email](https://user-images.githubusercontent.com/114586341/193468251-51fac83a-5409-4d41-9999-a8a70b35295a.png)
 </details>
 
+<!-- git add <file_name> <.>  -->
+<details><summary><b>  git add 'file_name' </b></summary>
+  
+```
+1. It is used to add the changes from working directory to stagging area (pre-commit stage).
+2. To add all changes at once, we use (git add .) commad
+3. To add changes of particular file, we use (git add file_name) command. Here, file name should be mentioned with extention.
+
+```
+![git_add](https://user-images.githubusercontent.com/114586341/193468917-7d166a35-66d4-4bab-834a-9ed17d8e5f34.png)
+</details>
+
