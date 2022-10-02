@@ -23,6 +23,7 @@
     
     1. It is used to identify the github account to which we working with.
     2. It is one time activity at inital phase of git configuration. If required, can change at any time.
+    3. test
   </p>
   
 ![git_config_user_name](https://user-images.githubusercontent.com/114586341/193466984-2194ef38-24fc-4525-a0c9-3c3fa2e0ccd3.png)
