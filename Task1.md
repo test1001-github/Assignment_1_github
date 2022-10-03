@@ -46,6 +46,18 @@
 ![git_config_user_email](https://user-images.githubusercontent.com/114586341/193468251-51fac83a-5409-4d41-9999-a8a70b35295a.png)
 </details>
 
+<!-- git branch master to main  -->
+<details><summary><b>  3. git branch -m master main</b></summary>
+  
+```
+1. This command is used to transfer the files from master branch to main.
+2. AFter this command, git will create 'main' branch and transfers all files into main and switched to it as active branch.
+3. As the main branch in github is named as 'main', it is necessary to match the branch name in git also. 
+4. This step is not required, if we select appropriate settings to name the main branch as 'main' during 'git-scm' setup at local machine. 
+```
+![git_master_to_main](https://user-images.githubusercontent.com/114586341/193469166-d627a269-c9b2-494a-a4fb-b24853855079.png)
+</details>
+
 <!-- git status -->
 <details><summary><b>  4. git status </b></summary>
   
@@ -130,7 +142,65 @@ Command:
 3. Eg., git checkout -b sub_branch
     - Let us assume, this command executed from 'main' branch.
     - After execution, git created sub_branch and switched and mark it as active branch.
-
+4. To check the list of branches, use command
+    >> git branch 
+    - The active branch is marked with astrisk (*)
 ```
 ![git_branch_switch](https://user-images.githubusercontent.com/114586341/193469158-e562977e-8363-4aeb-8d81-f9251c933b70.png)
+</details>
+
+<!-- git restore -->
+<details><summary><b>  git restore --staged 'file_name' (or) git restore --source 'commit SHA' 'file name'</b></summary>
+  
+```
+1. After executing this command, git will move the file from 'staging area' to 'working directory'
+2. Eg1:
+    >> git restore --staged aboutme.txt
+    - It will remove aboutme.txt file from staging area and mark it as 'M'.
+  Eg2:
+    >> git restore --source 8628daf aboutme.txt
+    - It will remove changes made at commit '8628daf' in aboutme.txt file from staging area and mark it as 'M'. 
+
+```
+![git_restore](https://user-images.githubusercontent.com/114586341/193469153-df5d7fce-bc8e-493d-9292-5f17b4c3b319.png)
+</details>
+
+<!-- git log -->
+<details><summary><b>  git log (or) git log --oneline (or) git log -p </b></summary>
+  
+```
+1. This command is used to review all activities which made to repository files.
+- git log : listing all changes
+- git log --online : list all commits with short notes
+- git log -p : list all changes with detailed description of each actions made in files.
+
+```
+>> git log --online:
+![git_log_oneline](https://user-images.githubusercontent.com/114586341/193469164-411b6a95-dc80-465a-99ed-36e1c58aacb0.png)</details>
+
+<!-- git merge -->
+<details><summary><b>  git merge 'branch name' </b></summary>
+  
+```
+1. This command is used to merge the content of one branch to another branch
+2. To execute this command, firt swtich to target branch
+3. Then exectute this command to merge content from source branch to target branch.
+4. Eg., git merge sub_branch
+    - Let us assume, we going to merge content from sub_branch to main branch
+    >> git checkout main (switching to main branch)
+    >> git merge sub_branch (merging contents from sub_branch to main branch)
+
+```
+![git_merge](https://user-images.githubusercontent.com/114586341/193469168-2401494f-5e4a-41a3-839c-eb4d5a2c7747.png)
+</details>
+
+<!-- git diff -->
+<details><summary><b>  git diff *branch1* *branch2*</b></summary>
+  
+```
+1. This command is used to find the differences between the file of different branches.
+2. It is highly useful when we facing merge conflicts
+
+```
+![git_diff](https://user-images.githubusercontent.com/114586341/193570126-548bca95-e663-4ed6-ac0c-7666a8a919c3.png)
 </details>
