@@ -33,6 +33,20 @@
 ![git_config_user_email](https://user-images.githubusercontent.com/114586341/193468251-51fac83a-5409-4d41-9999-a8a70b35295a.png)
 </details>
 
+<!-- git status -->
+<details><summary><b>  git status </b></summary>
+  
+```
+1. This command is used to know at which stage the file is at. That is,  whether the file is in working directory or staging area or committed.
+2. After this command, it shows the details with distinguished colors.
+3. Files marked with Red color means, it is in working directory area. We can see the description "Changes not staged for commit:" 
+4. Files marked with Green color means, it is in staging area. We can see the description "Changes to be committed:"
+5. Once committed, 
+```
+![git_status](https://user-images.githubusercontent.com/114586341/193469154-d68d17cb-a2d8-42d6-bf90-cb47be1c5006.png)
+</details>
+
+
 <!-- git add <file_name> <.>  -->
 <details><summary><b>  git add 'file_name' </b></summary>
   
@@ -44,4 +58,3 @@
 ```
 ![git_add](https://user-images.githubusercontent.com/114586341/193468917-7d166a35-66d4-4bab-834a-9ed17d8e5f34.png)
 </details>
-
