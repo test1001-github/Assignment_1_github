@@ -1,8 +1,9 @@
 ### Task 1: Demonstrate minimum 15 basic Git command with explanation and screenshot.
 <!-- git clone  -->
-<details><summary><b>  1. git clone 'github repository url'</b></summary>  
+<details><summary><b>  1. git clone </b></summary>  
   
 ```
+    syntax: 1. git clone *github repository url*
     1. This command is used to mirroring the github respository to the local system
     2. To clone the repository in local system, 
         - Copy the github repository url
@@ -14,7 +15,7 @@
 </details>
 
 <!-- git-init  -->
-<details><summary><b>  1. git init</b></summary>  
+<details><summary><b>  2. git init</b></summary>  
   
 ```
     1. This command is used to initialize the repository. 
@@ -25,7 +26,7 @@
 </details>
 
 <!-- git config --global user.name  -->
-<details><summary><b>  2. git config --global user.name "user_name"</b></summary>
+<details><summary><b>  3. git config --global user.name "user_name"</b></summary>
 
 ```    
 1. This command is used to configure the user name of the github account which we going to work with.
@@ -37,7 +38,7 @@
 
 
 <!-- git config --global user.email "user email id"  -->
-<details><summary><b>  3. git config --global user.email "user email id"</b></summary>
+<details><summary><b>  4. git config --global user.email "user email id"</b></summary>
   
 ```
 1. This command is used to configure the user email ID of the github account which we going to work with.
@@ -47,7 +48,7 @@
 </details>
 
 <!-- git branch master to main  -->
-<details><summary><b>  3. git branch -m master main</b></summary>
+<details><summary><b>  5. git branch -m master main</b></summary>
   
 ```
 1. This command is used to transfer the files from master branch to main.
@@ -59,7 +60,7 @@
 </details>
 
 <!-- git status -->
-<details><summary><b>  4. git status </b></summary>
+<details><summary><b>  6. git status </b></summary>
   
 ```
 1. Once the file saved in IDE, git start tracking the current stage of the file. That is,  whether the file is in working directory or staging area or committed.
@@ -75,7 +76,7 @@
 </details>
 
 <!-- git add <file_name> <.>  -->
-<details><summary><b>  git add 'file_name'  or git add .</b></summary>
+<details><summary><b>7. git add </b></summary>
   
 ```
 1. This command is used to add the changes from working directory to staging area (pre-commit area).
@@ -87,7 +88,7 @@
 </details>
 
 <!-- git commit -->
-<details><summary><b>  git commit (or) git commit -m 'message'</b></summary>
+<details><summary><b>  8. git commit -m 'message'</b></summary>
   
 ```
 1. This command is used to confirm the changes and tells git that the file is ready to push to remote location (github)
@@ -99,9 +100,10 @@
 </details>
 
 <!-- git push -->
-<details><summary><b>  git push 'remote name' 'target repository branch'</b></summary>
+<details><summary><b>  9. git push</b></summary>
   
 ```
+syntax: git push 'remote name' 'target repository branch'
 1. This command is used to push the committed changes to remote repository
 2. Eg.1, git push origin main.
     - It means, git will push the committed changes to 'main' branch in the 'origin' remote.
@@ -114,7 +116,7 @@
 
 
 <!-- git pull -->
-<details><summary><b>  git pull 'remote name' 'source repository branch'</b></summary>
+<details><summary><b>  10. git pull </b></summary>
   
 ```
 Scenraios:
@@ -122,6 +124,7 @@ Scenraios:
 2. Also, whenever we made changes in other branch of own repository or files in forks repositories, it is necessary to pull the changes to source respository files (by pull requests) to maintain the same level data.
 
 Command:
+syntax: git pull 'remote name' 'source repository branch'
 1. It is the combination of 'fetch' and 'merge' actions. 
 2. This command is used to pull the committed changes from remote repository to local git.
 2. Eg., git pull origin main.
@@ -132,7 +135,7 @@ Command:
 </details>
 
 <!-- git branch -->
-<details><summary><b>  git chekcout -b 'branch name'</b></summary>
+<details><summary><b>  11. git chekcout -b 'branch name'</b></summary>
   
 ```
 1. It is the combination of creating and switching branch in oneline. Same as
@@ -150,9 +153,10 @@ Command:
 </details>
 
 <!-- git restore -->
-<details><summary><b>  git restore --staged 'file_name' (or) git restore --source 'commit SHA' 'file name'</b></summary>
+<details><summary><b>  12. git restore </b></summary>
   
 ```
+syntax: git restore --staged 'file_name' (or) git restore --source 'commit SHA' 'file name'
 1. After executing this command, git will move the file from 'staging area' to 'working directory'
 2. Eg1:
     >> git restore --staged aboutme.txt
@@ -166,9 +170,10 @@ Command:
 </details>
 
 <!-- git log -->
-<details><summary><b>  git log (or) git log --oneline (or) git log -p </b></summary>
+<details><summary><b>  13. git log </b></summary>
   
 ```
+syntax: git log (or) git log --oneline (or) git log -p
 1. This command is used to review all activities which made to repository files.
 - git log : listing all changes
 - git log --online : list all commits with short notes
@@ -179,7 +184,7 @@ Command:
 ![git_log_oneline](https://user-images.githubusercontent.com/114586341/193469164-411b6a95-dc80-465a-99ed-36e1c58aacb0.png)</details>
 
 <!-- git merge -->
-<details><summary><b>  git merge 'branch name' </b></summary>
+<details><summary><b>  14. git merge 'branch name' </b></summary>
   
 ```
 1. This command is used to merge the content of one branch to another branch
@@ -195,7 +200,7 @@ Command:
 </details>
 
 <!-- git diff -->
-<details><summary><b>  git diff *branch1* *branch2*</b></summary>
+<details><summary><b> 15. git diff *branch1* *branch2*</b></summary>
   
 ```
 1. This command is used to find the differences between the file of different branches.
