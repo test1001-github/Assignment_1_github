@@ -118,3 +118,19 @@ Command:
 ```
 ![git_pull](https://user-images.githubusercontent.com/114586341/193469169-099a86a3-b733-4e5d-aafd-661cd7a8f335.png)
 </details>
+
+<!-- git branch -->
+<details><summary><b>  git chekcout -b 'branch name'</b></summary>
+  
+```
+1. It is the combination of creating and switching branch in oneline. Same as
+    >> git branch 'branch name'
+    >> git checkout 'branch name'
+2. After this command, git will create a branch and switched and mark it as active branch.
+3. Eg., git checkout -b sub_branch
+    - Let us assume, this command executed from 'main' branch.
+    - After execution, git created sub_branch and switched and mark it as active branch.
+
+```
+![git_branch_switch](https://user-images.githubusercontent.com/114586341/193469158-e562977e-8363-4aeb-8d81-f9251c933b70.png)
+</details>
