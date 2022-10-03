@@ -114,7 +114,7 @@ Command:
 2. This command is used to pull the committed changes from remote repository to local git.
 2. Eg., git pull origin main.
     - It means, git will fetch the changes from 'main' branch and merge it to the current directory at local git.
-3. Before executing the command, we should switch the branch, at which we want to pull the repository details.
+3. Before executing the command, we should ensure the branch, at which we want to pull the repository details.
 ```
 ![git_pull](https://user-images.githubusercontent.com/114586341/193469169-099a86a3-b733-4e5d-aafd-661cd7a8f335.png)
 </details>
