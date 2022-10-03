@@ -91,8 +91,10 @@
   
 ```
 1. This command is used to push the committed changes to remote repository
-2. Eg., git push origin main.
+2. Eg.1, git push origin main.
     - It means, git will push the committed changes to 'main' branch in the 'origin' remote.
+   Eg.2, git push origin sub_branch.
+    - It means, git will push the committed changes to 'sub_branch' in the 'origin' remote.
 
 ```
 ![git_push](https://user-images.githubusercontent.com/114586341/193552798-c98ee82c-6a76-4fcd-9c1d-ba9c64ab670b.png)
@@ -112,7 +114,7 @@ Command:
 2. This command is used to pull the committed changes from remote repository to local git.
 2. Eg., git pull origin main.
     - It means, git will fetch the changes from 'main' branch and merge it to the current directory at local git.
-
+3. Before executing the command, we should switch the branch, at which we want to pull the repository details.
 ```
 ![git_pull](https://user-images.githubusercontent.com/114586341/193469169-099a86a3-b733-4e5d-aafd-661cd7a8f335.png)
 </details>
