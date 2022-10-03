@@ -37,11 +37,12 @@
 <details><summary><b>  git status </b></summary>
   
 ```
-1. This command is used to know at which stage the file is at. That is,  whether the file is in working directory or staging area or committed.
-2. After this command, it shows the details with distinguished colors.
-3. Files marked with Red color means, it is in working directory area. We can see the description "Changes not staged for commit:" 
-4. Files marked with Green color means, it is in staging area. We can see the description "Changes to be committed:"
-5. Once committed, 
+1. Once the file saved in IDE, git start tracking the current stage of the file. That is,  whether the file is in working directory or staging area or committed.
+2. This 'git status' command is used to know at which stage the file is at. 
+3. After this command, it shows the details with description and files with distinguished colors.
+4. Files marked with Red color means, it is in working directory area. We can see the description as "Changes not staged for commit:" 
+5. Files marked with Green color means, it is in staging area. We can see the description as "Changes to be committed:"
+6. Once committed, we can see the description as "nothing to commit, working tree clean" 
 ```
 ![git_status](https://user-images.githubusercontent.com/114586341/193469154-d68d17cb-a2d8-42d6-bf90-cb47be1c5006.png)
 </details>
