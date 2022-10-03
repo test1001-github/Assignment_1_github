@@ -107,7 +107,7 @@
 ```
 Scenraios:
 1. Sometimes, we made changes in files at remote itself via browser. Like adding a new line in README.md file at github itself. In such case, it is essential to merge the changes and maintain same details at both git (local files) and github repository.
-2. Also, whenever we made changes in other branch or files in repositories of forks, it is necessary to pull the changes to source respository files (by pull requests) to maintain the same level data.
+2. Also, whenever we made changes in other branch of own repository or files in forks repositories, it is necessary to pull the changes to source respository files (by pull requests) to maintain the same level data.
 
 Command:
 1. It is the combination of 'fetch' and 'merge' actions. 
