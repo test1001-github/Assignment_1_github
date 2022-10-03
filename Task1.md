@@ -45,8 +45,9 @@
 6. Once committed, we can see the description as "nothing to commit, working tree clean" 
 ```
 ![git_status](https://user-images.githubusercontent.com/114586341/193469154-d68d17cb-a2d8-42d6-bf90-cb47be1c5006.png)
+![git_status_1](https://user-images.githubusercontent.com/114586341/193548151-5c45c514-5ad8-491b-b391-db5af23e1772.png)
+![git_status_2](https://user-images.githubusercontent.com/114586341/193548155-995d03a1-099f-467a-b8ad-e9474ff91d84.png)
 </details>
-
 
 <!-- git add <file_name> <.>  -->
 <details><summary><b>  git add 'file_name' </b></summary>
