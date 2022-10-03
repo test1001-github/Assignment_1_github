@@ -1,22 +1,35 @@
 ### Task 1: Demonstrate minimum 15 basic Git command with explanation and screenshot.
-<!-- git-init  -->
-<details><summary><b>  1. git-init</b></summary>  
+<!-- git clone  -->
+<details><summary><b>  1. git clone 'github repository url'</b></summary>  
   
 ```
-    1. It is used to initialize the repository. 
+    1. This command is used to mirroring the github respository to the local system
+    2. To clone the repository in local system, 
+        - Copy the github repository url
+        - Choose the location at local system and open the IDE (vise versa) 
+        - Execute the command with copied github respository url.
+    3. After this command, the files in repository will cloned to local system.
+```  
+![git_clone](https://user-images.githubusercontent.com/114586341/193469159-765332cf-39cb-4592-ad9b-1ca12c979934.png)
+</details>
+
+<!-- git-init  -->
+<details><summary><b>  1. git init</b></summary>  
+  
+```
+    1. This command is used to initialize the repository. 
     2. Once hit enter after this command, a hidden folder '.git' will be created in the target folder. 
     3. It contains all the backlog references of the current git directories history.
 ```  
 ![git_init_image](https://user-images.githubusercontent.com/114586341/193465368-f105958e-6df1-4ad2-b334-5fc54ef652e4.png)
 </details>
 
-
 <!-- git config --global user.name  -->
 <details><summary><b>  2. git config --global user.name "user_name"</b></summary>
 
 ```    
-1. It is used to configure the user name of the github account which we going to work with.
-2. It is one time activity required at inital phase of git configuration. If required, can change at any time.
+1. This command is used to configure the user name of the github account which we going to work with.
+2. Executing this command is the one time activity required at inital phase of git configuration. If required, can change at any time.
 ```  
 ![git_config_user_name](https://user-images.githubusercontent.com/114586341/193466984-2194ef38-24fc-4525-a0c9-3c3fa2e0ccd3.png)
 </details>
@@ -27,14 +40,14 @@
 <details><summary><b>  3. git config --global user.email "user email id"</b></summary>
   
 ```
-1. It is used to configure the user email ID of the github account which we going to work with.
-2. It is one time activity required at inital phase of git configuration. If required, can change at any time.
+1. This command is used to configure the user email ID of the github account which we going to work with.
+2. Executing this command is the one time activity required at inital phase of git configuration. If required, can change at any time.
 ```
 ![git_config_user_email](https://user-images.githubusercontent.com/114586341/193468251-51fac83a-5409-4d41-9999-a8a70b35295a.png)
 </details>
 
 <!-- git status -->
-<details><summary><b>  git status </b></summary>
+<details><summary><b>  4. git status </b></summary>
   
 ```
 1. Once the file saved in IDE, git start tracking the current stage of the file. That is,  whether the file is in working directory or staging area or committed.
@@ -50,13 +63,56 @@
 </details>
 
 <!-- git add <file_name> <.>  -->
-<details><summary><b>  git add 'file_name' </b></summary>
+<details><summary><b>  git add 'file_name'  or git add .</b></summary>
   
 ```
-1. It is used to add the changes from working directory to stagging area (pre-commit stage).
+1. This command is used to add the changes from working directory to staging area (pre-commit area).
 2. To add all changes at once, we use (git add .) commad
-3. To add changes of particular file, we use (git add file_name) command. Here, file name should be mentioned with extention.
+3. To add changes of particular file, we use (git add 'file_name') command. Here, 'file name' should be mentioned with extention.
 
 ```
 ![git_add](https://user-images.githubusercontent.com/114586341/193468917-7d166a35-66d4-4bab-834a-9ed17d8e5f34.png)
+</details>
+
+<!-- git commit -->
+<details><summary><b>  git commit (or) git commit -m 'message'</b></summary>
+  
+```
+1. This command is used to confirm the changes and tells git that the file is ready to push to remote location (github)
+2. After this command, git will move the file(s) from 'staging area' to 'committed area'
+3. Now the file is ready to push from git to remote respository.
+
+```
+![git_commit](https://user-images.githubusercontent.com/114586341/193469160-71b77ea5-4a6b-4b11-bbbd-fb1027e61fcf.png)
+</details>
+
+<!-- git push -->
+<details><summary><b>  git push 'remote name' 'target repository branch'</b></summary>
+  
+```
+1. This command is used to push the committed changes to remote repository
+2. Eg., git push origin main.
+    - It means, git will push the committed changes to 'main' branch in the 'origin' remote.
+
+```
+![git_push](https://user-images.githubusercontent.com/114586341/193552798-c98ee82c-6a76-4fcd-9c1d-ba9c64ab670b.png)
+</details>
+
+
+<!-- git pull -->
+<details><summary><b>  git pull 'remote name' 'source repository branch'</b></summary>
+  
+```
+Scenraios:
+1. Sometimes, we made changes in files at remote itself via browser. Like adding a new line in README.md file at github itself. In such case, it is essential to merge the changes and maintain same details at both git (local files) and github repository.
+2. Also, whenever we made changes in other branch or files in repositories of forks, it is necessary to pull the changes to source respository files (by pull requests) to maintain the same level data.
+
+Command:
+1. It is the combination of 'fetch' and 'merge' actions. 
+2. This command is used to pull the committed changes from remote repository to local git.
+2. Eg., git pull origin main.
+    - It means, git will fetch the changes from 'main' branch and merge it to the current directory at local git.
+
+```
+![git_pull](https://user-images.githubusercontent.com/114586341/193469169-099a86a3-b733-4e5d-aafd-661cd7a8f335.png)
 </details>
